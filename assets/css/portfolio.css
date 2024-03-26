@@ -22,6 +22,7 @@ h1{
     margin: auto;
   }
   .container .box {
+    border-radius: 20%;
     position: relative;
     width: 275px;
     height: 275px;
@@ -72,6 +73,9 @@ h1{
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  img{
+    border-radius: 20%;
   }
 
   

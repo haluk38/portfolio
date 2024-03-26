@@ -125,11 +125,6 @@ module.exports = adminRouter
 
 //         const user = {
 //             pseudo: "Haluk",
-//             password: await bcrypt.hash("",10)
-
-//         }
-//         const newuser = new userModel(user)
-//         newuser.save()
-
+//             password: await bcrypt.hash(".insert
 
 // })
