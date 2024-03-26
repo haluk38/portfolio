@@ -1,0 +1,22 @@
+{% extends "../base.twig" %}
+
+{% block style %}
+	<link rel="stylesheet" href="./css/portfolio.css">
+{% endblock %}
+
+{% block main %}
+	<h1>Mes projets</h1>
+	<div class="container">
+
+		{% for project in projects %}
+			<div class="box">
+				<a href="{{project.urlGithub}}">
+					<div class="imgBx">
+						<img src="/images/uploads/{{project.image}}" alt="project.name">
+					</div>
+				</a>
+			</div>
+		{% endfor %}
+
+	</div>
+</div></div></div>{% endblock %}

@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Italiana&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    
+    background-color: black;
+    font-family: "Anta", sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    user-select: none;
+}
+body:after {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: -2;
+	background: #080808;
+	background-image: radial-gradient(2px 2px at 20px 30px, #fff, #fff0),
+		radial-gradient(1px 1px at 43px 75px, #fff, #fff0),
+		radial-gradient(2px 1px at 54px 184px, #fff, #fff0),
+		radial-gradient(2px 2px at 93px 47px, #e6e6e6, #fff0),
+		radial-gradient(1px 1px at 148px 87px, #e8e8e8, #fff0),
+		radial-gradient(1px 2px at 193px 137px, #fff, #fff0),
+		radial-gradient(1px 1px at 210px 154px, #f5f5f5, #fff0),
+		radial-gradient(2px 1px at 243px 102px, #e2e2e2, #fff0),
+		radial-gradient(2px 1px at 264px 184px, #fff, #fff0),
+		radial-gradient(2px 2px at 293px 44px, #efefef, #fff0),
+		radial-gradient(1px 1px at 223px 62px, #ececec, #fff0),
+		radial-gradient(1px 2px at 249px 162px, #fff, #fff0),
+		radial-gradient(1px 1px at 73px 99px, #eaeaea, #fff0),
+		radial-gradient(1px 2px at 163px 42px, #efefef, #fff0),
+		linear-gradient(-90deg, #20005850 0%, #000 50%, #20005850 100%);
+	background-repeat: repeat;
+	background-size: 333px 263px, 333px 293px, 333px 363px, 333px 463px,
+		433px 193px, 333px 203px, 633px 223px, 333px 263px, 333px 285px, 333px 179px,
+		333px 163px, 333px 363px, 533px 163px, 333px 213px, 100% 100%;
+}
+
+.container {
+    max-width: 800px;
+    margin: 5% auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+	font-family: "Anta", sans-serif;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.add-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* formulaire d'ajout de projet  */
+
+.popup {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.popup-content {
+    background-color: #fff;
+    width: 400px;
+    max-width: 90%;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    font-size: 24px;
+}
+.hidden{
+	    display: none;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, button {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#projectContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    
+}
+
+.project-info p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.project-info div {
+    margin-bottom: 10px;
+}
+
+.project-info a {
+    color: #ff6347;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.project-info a:hover {
+    text-decoration: underline;
+}
+img{
+    width: 300px;
+    max-height: 245px;
+    
+}
+.img{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.boutton{
+    text-align: center;
+}

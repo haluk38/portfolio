@@ -1,0 +1,87 @@
+body{
+    
+    background-color: black;
+    font-family: "Anta", sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    user-select: none;
+}
+body:after {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: -2;
+	background: #080808;
+	background-image: radial-gradient(2px 2px at 20px 30px, #fff, #fff0),
+		radial-gradient(1px 1px at 43px 75px, #fff, #fff0),
+		radial-gradient(2px 1px at 54px 184px, #fff, #fff0),
+		radial-gradient(2px 2px at 93px 47px, #e6e6e6, #fff0),
+		radial-gradient(1px 1px at 148px 87px, #e8e8e8, #fff0),
+		radial-gradient(1px 2px at 193px 137px, #fff, #fff0),
+		radial-gradient(1px 1px at 210px 154px, #f5f5f5, #fff0),
+		radial-gradient(2px 1px at 243px 102px, #e2e2e2, #fff0),
+		radial-gradient(2px 1px at 264px 184px, #fff, #fff0),
+		radial-gradient(2px 2px at 293px 44px, #efefef, #fff0),
+		radial-gradient(1px 1px at 223px 62px, #ececec, #fff0),
+		radial-gradient(1px 2px at 249px 162px, #fff, #fff0),
+		radial-gradient(1px 1px at 73px 99px, #eaeaea, #fff0),
+		radial-gradient(1px 2px at 163px 42px, #efefef, #fff0),
+		linear-gradient(-90deg, #20005850 0%, #000 50%, #20005850 100%);
+	background-repeat: repeat;
+	background-size: 333px 263px, 333px 293px, 333px 363px, 333px 463px,
+		433px 193px, 333px 203px, 633px 223px, 333px 263px, 333px 285px, 333px 179px,
+		333px 163px, 333px 363px, 533px 163px, 333px 213px, 100% 100%;
+}
+.login-container {
+    width: 300px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+            box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    border-radius: 5px;
+    color: white;
+    padding: 1.75rem ;
+    transition: 0.4s ease;
+    overflow-wrap: break-word !important;
+    border-radius: 6px;
+  }
+  
+  h1 {
+    color: white;
+    margin-bottom: 30px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color:white;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #fca311;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #fca311;
+  }

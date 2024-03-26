@@ -1,0 +1,52 @@
+{% extends "../base.twig" %}
+
+{% block style %}
+<link rel="stylesheet" href="./css/home.css">
+{% endblock %}
+
+{% block main %}
+	<main>
+		<section>
+			<article>
+				<div id="titre">
+					Bonjour, je m'appelle
+				</div>
+				<div id="titreTwo">
+					Haluk Yucel
+				</div>
+				<div id="titrethree">
+					<div class="typed-out">Back end Développeur|</div>
+				</div>
+				<div>
+					<nav>
+						<ul class="liens">
+							<li>
+								<a class="nav" href="/portfolio" class="{{route == '/portfolio' ? 'active':''}}">Portfolio</a>
+							</li>
+							<li>
+								<a class="nav" href="/contact" class="{{route == '/contact' ? 'active':''}}">Contacter moi</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div>
+
+					<ul class="sociaux">
+						<li>
+							<a target="_blank" href="https://github.com/haluk38/"><img id="git" src="/images/github.png" alt="GitHub"></a>
+						</li>
+						<li>
+							<a target="_blank" href="https://www.linkedin.com/in/haluk-yucel-1885ba278/"><img  src="/images/linkedin.png" alt="Linkedin"></a>
+						</li>
+					</ul>
+
+				</div>
+			</article>
+			<article id="test">
+				<div>
+					<img id="haluk" src="./images/imgHY.png" alt="">
+				</div>
+			</article>
+		</section>
+	</main>
+{% endblock %}

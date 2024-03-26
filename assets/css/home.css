@@ -1,0 +1,93 @@
+
+/* debut de mon main */
+.typed-out{
+    overflow: hidden;
+    
+    white-space: nowrap;
+    animation: 
+    typing 1.7s steps(25, end) forwards;
+    font-size: 3em;
+    width: 0;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+#haluk{
+    filter: grayscale(100%);
+    opacity: 0.6;
+    border: 4mm ridge rgba(211, 220, 50, .6);
+}
+ #titre{
+    color: white;
+    font-size:3em;
+ }
+ #titreTwo{
+    color: white;
+    font-size: 8em;
+ }
+ #titrethree{
+    color: white;
+    
+    
+
+ }
+
+ .sociaux{
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    gap: 25px;
+    padding-top: 30px;
+ }
+ .liens{
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    gap: 25px;
+    padding-top: 30px;
+ }
+.nav{
+    color:white;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bolder;
+    padding: 5px 20px;
+    display: inline-flex;
+    font-weight: 700;
+    transition: 0.5s;
+    border-style: outset;
+}
+.nav:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 500px;
+    transition: letter-spacing 0.5s, left 0.5s;
+}
+
+.nav:hover {
+    color: #fca311;
+    background: transparent;
+}
+section{
+    display: flex;
+    place-items: center;
+    justify-content: space-around;
+    margin-top: 7%;
+}
+/* fin de mon main */

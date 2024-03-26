@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Italiana&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+body{
+    
+    background-color: black;
+    font-family: "Anta", sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    user-select: none;
+}
+body:before {
+	content: "";
+	position: fixed;
+	height: 100vh;
+	width: 100vh;
+	background: url(https://cdn.josetxu.com/img/ss-sun.jpg);
+	left: -90vh;
+	top: 0;
+	border-radius: 100%;
+	box-shadow: 0 0 10em 5em #ff66006b, 0 0 100px 50px #ff6600 inset,
+		0 0 10px 5px #ffcc00f2, 0 0 10px 5px #ffcc00f2 inset;
+	filter: blur(2px);
+	z-index: 2;
+	animation: spin 300s ease 0s infinite;
+}
+body:after {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: -2;
+	background: #080808;
+	background-image: radial-gradient(2px 2px at 20px 30px, #fff, #fff0),
+		radial-gradient(1px 1px at 43px 75px, #fff, #fff0),
+		radial-gradient(2px 1px at 54px 184px, #fff, #fff0),
+		radial-gradient(2px 2px at 93px 47px, #e6e6e6, #fff0),
+		radial-gradient(1px 1px at 148px 87px, #e8e8e8, #fff0),
+		radial-gradient(1px 2px at 193px 137px, #fff, #fff0),
+		radial-gradient(1px 1px at 210px 154px, #f5f5f5, #fff0),
+		radial-gradient(2px 1px at 243px 102px, #e2e2e2, #fff0),
+		radial-gradient(2px 1px at 264px 184px, #fff, #fff0),
+		radial-gradient(2px 2px at 293px 44px, #efefef, #fff0),
+		radial-gradient(1px 1px at 223px 62px, #ececec, #fff0),
+		radial-gradient(1px 2px at 249px 162px, #fff, #fff0),
+		radial-gradient(1px 1px at 73px 99px, #eaeaea, #fff0),
+		radial-gradient(1px 2px at 163px 42px, #efefef, #fff0),
+		linear-gradient(-90deg, #20005850 0%, #000 50%, #20005850 100%);
+	background-repeat: repeat;
+	background-size: 333px 263px, 333px 293px, 333px 363px, 333px 463px,
+		433px 193px, 333px 203px, 633px 223px, 333px 263px, 333px 285px, 333px 179px,
+		333px 163px, 333px 363px, 533px 163px, 333px 213px, 100% 100%;
+}
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+
+/* debut de mon header */
+header{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+header h1{
+    padding: 5px 40px;
+}
+header ul li {
+    list-style: none;
+    display:contents;
+    list-style-type: none;
+    
+}
+header ul li a {
+    color:white;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 10px 45px;
+    display: inline-flex;
+    font-weight: 700;
+    transition: 0.5s;
+    letter-spacing: 5px;
+    
+}
+header ul:hover li a {
+    color: white;
+}
+header ul li:hover a {
+    color: #fca311;
+    background: transparent;
+}
+  header ul li a:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 500px;
+    transition: letter-spacing 0.5s, left 0.5s;
+}
+.active{
+    color: #fca311;
+}
+/* fin de mon header */
+
+/* debut de mon footer */
+footer{
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+}
+/* fin de mon footer */
+
+
+
+
+

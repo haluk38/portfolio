@@ -1,0 +1,22 @@
+{% extends "adminBase.twig" %}
+
+{% block main %}
+<div class="popup-content">
+	<h2>Modifier un Projet</h2>
+	<form action="/updateProject/{{project.id}}" method="post" enctype="multipart/form-data">
+		<label for="project-name">Nom du Projet:</label>
+		<input type="text" id="project-name" name="name" value="{{project.name}}">
+
+		<label for="project-url">URL du Projet:</label>
+		<input type="url" id="project-url" name="url" value="{{project.url}}">
+
+		<label for="github-url">URL Github:</label>
+		<input type="url" id="github-url" name="urlGithub" value="{{project.urlGithub}}">
+
+		<label for="project-image">Image du Projet:</label>
+		<input type="file" id="project-image" name="image" accept="image/*" value="{{project.image}}">
+
+		<button type="submit">Modifier</button>
+	</form>
+</div>
+{% endblock %}

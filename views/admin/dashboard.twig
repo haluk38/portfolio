@@ -1,0 +1,60 @@
+{% extends "adminBase.twig" %}
+
+
+{% block main %}
+	<div class="container">
+		<h1>Gestion de Projets</h1>
+		<div class="button-container">
+			<button class="add-button" onclick="displayModal()">Ajouter un Projet</button>
+			{# <button class="edit-button">Modifier un Projet</button>
+									<button class="delete-button">Supprimer un Projet</button> #}
+		</div>
+	</div>
+
+	<div class="popup hidden" id="popup">
+		{% include "admin/_addForm.twig" %}
+	</div>
+	<div id="projectContainer">
+		{% for project in projects %}
+			<div class="project-info">
+				<div>
+					<p>
+						<u>Nom du projet</u>
+						:
+					</p>
+					<p>{{project.name}}</p>
+				</div>
+				<div>
+					<p>
+						<u>Url projet</u>
+						:
+					</p>
+					<p>{{project.url}}</p>
+				</div>
+				<div>
+					<p>
+						<u>GitHub</u>
+						:
+					</p>
+					<p>{{project.urlGithub}}</p>
+				</div>
+				<div>
+					<p>
+						<u>Image</u>
+						:
+					</p><br>
+					<div class="img">
+						<img src="/images/uploads/{{project.image}}" alt="imageProjet">
+					</div>
+
+				</div>
+				<div class="boutton">
+					<a href="/deleteProject/{{project.id}}">Supprimer</a>
+					<a href="/updateProject/{{project.id}}">Modifier</a>
+				</div>
+
+			</div>
+		{% endfor %}
+	</div>
+
+{% endblock %}
