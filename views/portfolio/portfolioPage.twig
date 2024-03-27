@@ -7,16 +7,25 @@
 {% block main %}
 	<h1>Mes projets</h1>
 	<div class="container">
-
 		{% for project in projects %}
 			<div class="box">
+			<div id="container">
+			
 				<a href="{{project.urlGithub}}">
 					<div class="imgBx">
-						<img src="/images/uploads/{{project.image}}" alt="project.name">
+						<img src="/images/uploads/{{project.image}}" alt="{{ project.name }}">
 					</div>
 				</a>
+			</div>
+			<div>
+				<a href="{{project.url}}">
+					<div id="play">
+						<img src="/images/jouer.png" alt="">
+					</div>
+				</a>
+			</div>
 			</div>
 		{% endfor %}
 
 	</div>
-</div></div></div>{% endblock %}
+{% endblock %}
