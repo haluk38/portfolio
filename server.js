@@ -18,7 +18,7 @@ app.use(session({
 }))
 app.use(mainRouter);
 app.use(adminRouter)
-app.listen(3001, (err)=>{
+app.listen(3000, (err)=>{
     console.log(err ? err : "connecter au server");
 });
 
